@@ -1,0 +1,134 @@
+.container {
+    width: 70%;
+    height: 80vh;
+    margin: auto;
+    margin-top: 75px;
+    border-radius: 12px;
+    background-image: linear-gradient(180deg, #130754 0%, #3b2f80 100%);
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    padding-top: 60px;
+}
+
+.input {
+    display: flex;
+    width: 50%;
+    height: 24px;
+    background: #ebfffc;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding-left: 20px;
+    color: #626262;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.search-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background: #ebfffc;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.search-image {
+    width: 10px;
+}
+
+.weather-image {
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+.weather {
+    height: 100px;
+    width: 100px;
+}
+
+.icon {
+    height: 20px;
+}
+}
+
+.temperature {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 56px;
+    font-weight: 400;
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.details-wrapper {
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 10px;
+}
+
+.detail {
+    margin: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px
+}
+
+
+@media (min-width: 769px) {
+
+    .container {
+        width: 35%;
+        height: 84vh;
+    }
+
+    .input {
+        height: 50px;
+        border-radius: 40px;
+        font-size: 18px;
+    }
+
+    .search-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .search-image {
+        width: 20px;
+    }
+
+    .weather {
+        height: 100px;
+        width: 100px;
+    }
+
+    .details-wrapper {
+        margin-top: 32px;
+        display: flex;
+        justify-content: center;
+        color: white;
+        font-size: 18px;
+    }
+
+    .icon {
+        margin-top: 8px;
+    }
+}
