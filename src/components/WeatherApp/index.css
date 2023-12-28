@@ -97,11 +97,11 @@
 
     .container {
         width: 35%;
-        height: 84vh;
+        height: 70vh;
     }
 
     .input {
-        height: 50px;
+        height: 48px;
         border-radius: 40px;
         font-size: 18px;
     }
@@ -130,5 +130,9 @@
 
     .icon {
         margin-top: 8px;
+    }
+
+    .text {
+        font-size: 12px;
     }
 }
