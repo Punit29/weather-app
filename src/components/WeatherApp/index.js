@@ -63,7 +63,9 @@ const WeatherApp = () => {
 
   return (
     <div className="container">
-      <div className="top">
+      <form className="top" onSubmit={(e) => {
+        e.preventDefault();
+        search()}}>
         <input
           type="text"
           className="input"
@@ -74,7 +76,7 @@ const WeatherApp = () => {
         <div className="search-icon" onClick={() => search()}>
           <img className="search-image" src={searchIcon} alt="search-icon" />
         </div>
-      </div>
+      </form>
       <div className="weather-image">
         <img src={icon} alt="cloud icon" className="weather" />
       </div>
