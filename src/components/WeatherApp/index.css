@@ -1,6 +1,6 @@
 .container {
   width: 70%;
-  height: 80vh;
+  height: 75vh;
   margin: auto;
   margin-top: 75px;
   border-radius: 12px;
@@ -74,14 +74,14 @@
   }
 
   .details-wrapper {
-    margin-top: 12px;
+    margin-top: 18px;
     font-size: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
-    gap: 12px;
+    gap: 24px;
   }
 
   .detail {
@@ -138,7 +138,7 @@
 @media (min-width: 1024px) {
   .container {
     width: 35%;
-    height: 70vh;
+    height: 65vh;
   }
 
   .input {
@@ -192,9 +192,9 @@
     justify-content: center;
   }
 
-  .icon {
+  /* .icon {
     margin-top: 8px;
-  }
+  } */
 
   .text {
     font-size: 12px;

@@ -52,7 +52,7 @@ const WeatherApp = () => {
           location: res.data.name,
         });
         localStorage.setItem('lastCity', res.data.name);
-        setIcon(iconMap[res.data.weather[0].main])
+        setIcon(iconMap[res.data.weather[0].main] || iconMap.Clouds)
       })
       .catch(err => {
         toast.error(err.response.data.message, {
