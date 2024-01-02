@@ -48,7 +48,7 @@ const WeatherApp = () => {
         setWeather({
           humidity: res.data.main.humidity + "%",
           wind: res.data.wind.speed + "m/s",
-          temperature: res.data.main.temp + "°C",
+          temperature: Math.floor(res.data.main.temp) + "°C",
           location: res.data.name,
         });
         localStorage.setItem('lastCity', res.data.name);

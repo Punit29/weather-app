@@ -1,66 +1,167 @@
 .container {
-    width: 70%;
-    height: 80vh;
-    margin: auto;
-    margin-top: 75px;
-    border-radius: 12px;
-    background-image: linear-gradient(180deg, #130754 0%, #3b2f80 100%);
+  width: 70%;
+  height: 80vh;
+  margin: auto;
+  margin-top: 75px;
+  border-radius: 12px;
+  background-image: linear-gradient(180deg, #130754 0%, #3b2f80 100%);
 }
 
 .top {
-    display: flex;
-    justify-content: center;
-    gap: 14px;
-    padding-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  padding-top: 60px;
 }
 
 .input {
-    display: flex;
-    width: 50%;
-    height: 24px;
-    background: #ebfffc;
-    border: none;
-    outline: none;
-    border-radius: 20px;
-    padding-left: 20px;
-    color: #626262;
-    font-size: 12px;
-    font-weight: 400;
+  display: flex;
+  width: 50%;
+  height: 24px;
+  background: #ebfffc;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  padding-left: 20px;
+  color: #626262;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .search-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 24px;
-    height: 24px;
-    background: #ebfffc;
-    border-radius: 40px;
-    cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  background: #ebfffc;
+  border-radius: 40px;
+  cursor: pointer;
 }
 
 .search-image {
-    width: 10px;
+  width: 10px;
 }
 
 .weather-image {
-    margin-top: 18px;
-    display: flex;
-    justify-content: center;
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+}
+
+.temperature,
+.location,
+.details-wrapper {
+  color: white;
 }
 
 @media (max-width: 768px) {
-.weather {
+  .weather {
     height: 100px;
     width: 100px;
-}
+  }
 
-.icon {
+  .icon {
     height: 20px;
-}
+  }
+
+  .temperature {
+    font-size: 36px;
+  }
+
+  .location {
+    font-size: 24px;
+  }
+
+  .details-wrapper {
+    margin-top: 12px;
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .detail {
+    gap: 8px;
+  }
 }
 
-.temperature {
+@media (min-width: 769px) and (max-width: 1023px) {
+  .container {
+    width: 50%;
+    height: 75vh;
+  }
+
+  .input {
+    height: 36px;
+    border-radius: 30px;
+    font-size: 14px;
+  }
+
+  .search-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .search-image {
+    width: 15px;
+  }
+
+  .weather {
+    height: 80px;
+    width: 80px;
+  }
+
+  .details-wrapper {
+    margin-top: 24px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .icon {
+    margin-top: 6px;
+  }
+
+  .text {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 35%;
+    height: 70vh;
+  }
+
+  .input {
+    height: 48px;
+    border-radius: 40px;
+    font-size: 18px;
+  }
+
+  .search-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .search-image {
+    width: 20px;
+  }
+
+  .weather {
+    height: 100px;
+    width: 100px;
+  }
+
+  .temperature {
     display: flex;
     justify-content: center;
     color: white;
@@ -76,63 +177,26 @@
     font-weight: 400;
 }
 
-.details-wrapper {
-    margin-top: 18px;
-    display: flex;
-    justify-content: center;
-    color: white;
-    font-size: 10px;
-}
-
-.detail {
+  .detail {
     margin: auto;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    gap: 12px
-}
+    gap: 12px;
+  }
 
+  .details-wrapper {
+    margin-top: 32px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+  }
 
-@media (min-width: 769px) {
+  .icon {
+    margin-top: 8px;
+  }
 
-    .container {
-        width: 35%;
-        height: 70vh;
-    }
-
-    .input {
-        height: 48px;
-        border-radius: 40px;
-        font-size: 18px;
-    }
-
-    .search-icon {
-        width: 50px;
-        height: 50px;
-    }
-
-    .search-image {
-        width: 20px;
-    }
-
-    .weather {
-        height: 100px;
-        width: 100px;
-    }
-
-    .details-wrapper {
-        margin-top: 32px;
-        display: flex;
-        justify-content: center;
-        color: white;
-        font-size: 18px;
-    }
-
-    .icon {
-        margin-top: 8px;
-    }
-
-    .text {
-        font-size: 12px;
-    }
+  .text {
+    font-size: 12px;
+  }
 }
