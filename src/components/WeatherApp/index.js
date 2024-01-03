@@ -42,6 +42,7 @@ const WeatherApp = () => {
   const [icon, setIcon] = useState("");
 
   useEffect(() => {
+    console.log("aaaaaaa");
     search();
   }, []);
 
@@ -81,13 +82,7 @@ const WeatherApp = () => {
 
   return (
     <div className="w-full h-screen bg-gradientBg bg-no-repeat bg-cover bg-center flex flex-col items-center justify-center px-4 lg:px-0">
-      <form
-        className="h-16 bg-black/30 w-full max-w-[450px] rounded-full backdrop-blur-[32px] mb-8"
-        onSubmit={(e) => {
-          e.preventDefault();
-          search();
-        }}
-      >
+      <form className="h-16 bg-black/30 w-full max-w-[450px] rounded-full backdrop-blur-[32px] mb-8">
         <div className="h-full relative flex items-center justify-between p-2">
           <input
             type="text"
@@ -96,7 +91,10 @@ const WeatherApp = () => {
             value={location}
             onChange={(e) => setLocation(e.target.value)}
           />
-          <button className="bg-[#1ab8ed] w-20 h-12 rounded-full flex justify-center items-center transition" onClick={() => search()}>
+          <button
+            className="bg-[#1ab8ed] w-20 h-12 rounded-full flex justify-center items-center transition"
+            onClick={() => search()}
+          >
             <IoMdSearch className="text-2xl text-white" />
           </button>
         </div>
