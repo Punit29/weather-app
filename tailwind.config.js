@@ -7,7 +7,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        gradientBg: "url('/src/components/images/bg.png')",
+        gradientBg: "url('/src/components/images/bg.jpg')",
       },
     },
   },
