@@ -93,7 +93,10 @@ const WeatherApp = () => {
           />
           <button
             className="bg-[#1ab8ed] w-20 h-12 rounded-full flex justify-center items-center transition"
-            onClick={() => search()}
+            onClick={(e) => {
+              e.preventDefault();
+              search();
+            }}
           >
             <IoMdSearch className="text-2xl text-white" />
           </button>
